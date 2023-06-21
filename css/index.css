@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    min-width: 400px;
+    max-width: 600px;
+    margin: 0 440px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.settings-container{
+    width: 100%;
+    user-select: none;
+}
+
+.settings-container select{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.settings-container .difficulty{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.difficulty label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 6px;
+    border-radius: 10px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.difficulty label input{
+    margin-right: 4px;
+}
+
+.container .difficulty label:hover{
+    background: rgba( 255, 255, 255, 0.25 );
+}
+
+.settings-container button{
+    width: 100%;
+}
